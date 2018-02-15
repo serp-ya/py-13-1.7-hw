@@ -1,6 +1,6 @@
-from Animal import Animals
+from Animal import Animal
 
-class Birds(Animals):
+class Bird(Animal):
     has_wings = True
     has_feathers = True
     can_fly = True

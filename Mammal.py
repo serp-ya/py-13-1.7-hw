@@ -1,6 +1,6 @@
-from Animal import Animals
+from Animal import Animal
 
-class Mammals(Animals):
+class Mammals(Animal):
     has_teeth = True
     has_fur = True
     has_mammary_gland = True

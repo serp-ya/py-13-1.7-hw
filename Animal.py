@@ -1,4 +1,4 @@
-class Animals:
+class Animal:
     it_alive = True
     has_brain = True
     has_heart = True
