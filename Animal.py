@@ -3,7 +3,7 @@ class Animals:
     has_brain = True
     has_heart = True
     has_nervers = True
-    weight = None       # kilograms
+    weight = 0 # kilograms
 
     def feed(self, food):
         self.eat(food)
