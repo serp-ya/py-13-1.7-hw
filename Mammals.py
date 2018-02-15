@@ -7,9 +7,6 @@ class Mammals(Animals):
     has_diaphragm = True
     milk = 0
 
-    def make_love(self, partner):
-        self.reproduce(partner)
-
     def give_a_birth(self, superClass):
         super().give_a_birth(superClass)
         self.milk += 10
