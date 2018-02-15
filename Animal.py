@@ -23,3 +23,11 @@ class Animals:
 
     def gain(self, callories):
         self.weight += (callories / 1000) # (callories / 1000) for example
+
+    def reproduce(self):
+        if self.it_alive:
+            it_pregnant = True
+
+    def give_a_birth(self, superClass):
+        if self.it_pregnant:
+            return superClass()
