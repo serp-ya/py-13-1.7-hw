@@ -4,6 +4,8 @@ class Animals:
     has_heart = True
     has_nervers = True
     weight = 0 # kilograms
+    sex = None
+    it_pregnant = None
 
     def feed(self, food):
         self.eat(food)
