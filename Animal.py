@@ -4,22 +4,22 @@ class Animal:
     has_heart = True
     has_nervers = True
     weight = 0 # kilograms
-    sex = None
+    sex = None # 'm' or 'f'
     it_pregnant = None
+
+    def __init__(self, sex, weight):
+        self.sex = sex
+        self.weight = weight
 
     def feed(self, food):
         self.eat(food)
 
     def eat(self, food):
         callories = ((food['protein'] * 4) + (food['carbohydrate'] * 4) + (food['fat'] * 9))
-        self.digestion(callories, food.poison)
+        self.digestion(callories)
 
-    def digestion(self, callories, poison):
-        if poison:
-            self.it_alive = False
-            print('I died')
-        else:
-            self.gain(callories)
+    def digestion(self, callories):
+        self.gain(callories)
 
     def gain(self, callories):
         self.weight += (callories / 1000) # (callories / 1000) for example
@@ -31,6 +31,6 @@ class Animal:
             else:
                 partner.it_pregnant = True
 
-    def give_a_birth(self, superClass):
+    def give_a_birth(self, super_class, sex, weight):
         if self.it_pregnant:
-            return superClass()
+            return super_class(sex, weight)

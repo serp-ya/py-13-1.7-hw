@@ -7,12 +7,18 @@ class Mammal(Animal):
     has_diaphragm = True
     milk = 0
 
-    def give_a_birth(self, superClass):
-        super().give_a_birth(superClass)
+    def give_a_birth(self, super_class, sex, weight):
         self.milk += 10
+        return super().give_a_birth(super_class, sex, weight)
+
 
     def wet_nurse(self, child):
         if self.milk:
-            milkCount = 1
-            self.milk -= milkCount
-            child.feed(milkCount)
+            doseCount = 1
+            self.milk -= doseCount
+            dose = {
+                'protein': 4.8 * doseCount, # примерная пищевая ценность молока
+                'carbohydrate': 7.8 * doseCount,
+                'fat': 4.1 * doseCount
+            }
+            child.feed(dose)
