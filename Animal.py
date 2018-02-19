@@ -31,6 +31,6 @@ class Animal:
             else:
                 partner.it_pregnant = True
 
-    def give_a_birth(self, super_class, sex, weight):
+    def give_a_birth(self, sex, weight):
         if self.it_pregnant:
-            return super_class(sex, weight)
+            return self.__class__(sex, weight)

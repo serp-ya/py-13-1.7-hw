@@ -11,4 +11,4 @@ duck_man = Duck('m', get_random_weight(8))
 
 duck_girl.reproduce(duck_man)
 
-duck_child = duck_girl.give_a_birth(Duck, get_random_sex(), get_random_weight(2))
+duck_child = duck_girl.give_a_birth(get_random_sex(), get_random_weight(2))

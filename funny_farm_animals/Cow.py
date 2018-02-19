@@ -11,7 +11,7 @@ bull = Cow('m',  get_random_weight(400))
 cow.reproduce(bull)
 print('cow is pregnant', cow.it_pregnant)
 
-calf = cow.give_a_birth(Cow, get_random_sex(), get_random_weight(100))
+calf = cow.give_a_birth(get_random_sex(), get_random_weight(100))
 print('calf', calf)
 print('calf.sex', calf.sex)
 print('calf.weight', calf.weight)

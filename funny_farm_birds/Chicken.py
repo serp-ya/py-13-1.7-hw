@@ -11,4 +11,4 @@ cock = Chicken('m', get_random_weight(4))
 
 chicken.reproduce(cock)
 
-cymbals = chicken.give_a_birth(Chicken, get_random_sex(), get_random_weight(0.5))
+cymbals = chicken.give_a_birth(get_random_sex(), get_random_weight(0.5))

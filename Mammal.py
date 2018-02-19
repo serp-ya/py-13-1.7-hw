@@ -7,9 +7,9 @@ class Mammal(Animal):
     has_diaphragm = True
     milk = 0
 
-    def give_a_birth(self, super_class, sex, weight):
+    def give_a_birth(self, sex, weight):
         self.milk += 10
-        return super().give_a_birth(super_class, sex, weight)
+        return super().give_a_birth(sex, weight)
 
 
     def wet_nurse(self, child):

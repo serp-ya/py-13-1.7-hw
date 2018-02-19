@@ -12,4 +12,4 @@ goat_man = Goat('m',  get_random_weight(70))
 
 goat_girl.reproduce(goat_man)
 
-kid = goat_girl.give_a_birth(Goat, get_random_sex(), get_random_weight(20))
+kid = goat_girl.give_a_birth(get_random_sex(), get_random_weight(20))

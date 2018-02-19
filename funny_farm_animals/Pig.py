@@ -11,4 +11,4 @@ pig_man = Pig('m',  get_random_weight(220))
 
 pig_girl.reproduce(pig_man)
 
-piglet = pig_girl.give_a_birth(Pig, get_random_sex(), get_random_weight(40))
+piglet = pig_girl.give_a_birth(get_random_sex(), get_random_weight(40))
